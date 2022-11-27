@@ -11,6 +11,7 @@ const Bill = ({ bill }) => {
     return (
         <tr>
             {/* Render the Bill's details */}
+            <td>{bill.payment_id}</td>
             <td>{bill.payment_date}</td>
             <td>{bill.amount}</td>
             <td>{bill.bill.bill_id}</td>

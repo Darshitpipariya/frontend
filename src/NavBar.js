@@ -22,18 +22,18 @@ const NavBar = ({ user, setUser }) => {
     // Fully styled Navbar using Bootstrap (it can be a big pain to style Navbars)
     return (
         <div className='regular-shadow mb-1'>
-            <nav className='navbar navbar-expand-lg navbar-light bg-light' id='menu'>
+            <nav className='navbar navbar-expand-md navbar-light bg-light' id='menu'>
                 {/* UPDATE user.name PROPERTY IF IT DOESN'T EXIST */}
-                <span class="navbar-brand border border-light p-2">Welcome, {user.fname}</span>
+                <span className="navbar-brand border border-light p-2">Welcome, {user.fname}</span>
 
                 {/* Bootstrap element for hamburger menu on collapse */}
-                <button
+                {/* <button
                     className='navbar-toggler' type='button'
                     data-toggle='collapse' data-target='#navbarSupportedContent'
                     aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'
                 >
                     <span className='navbar-toggler-icon'></span>
-                </button> 
+                </button>  */}
 
                 {/* This menu will be collapsed under Hamburger Menu if screen size becomes small enough */}
                 <div className='collapse navbar-collapse ' id='navbarSupportedContent'>
