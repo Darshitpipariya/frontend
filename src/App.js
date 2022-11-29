@@ -25,7 +25,7 @@ function App() {
     setTimeout(() => {
       setNotificationType(null)
       setNotification(null)
-    }, 30000)
+    }, 3000)
   }
 
   const handleLogin = async (credentials) => {
@@ -34,11 +34,11 @@ function App() {
       setUser(userObject)
       window.localStorage.setItem('loggedInUser', JSON.stringify(userObject))
 
-      notificationHandler(`Logged in successfully as ${userObject.fname}`, 'success')
+      notificationHandler(`Logged in successfully as ${userObject.fname}`, 'alert-success')
       setBills([])
     }
     catch (exception) {
-      notificationHandler(`Log in failed, check username and password entered`, 'error')
+      notificationHandler(`Log in failed, check username and password entered`, 'alert-danger')
     }
   }
 
